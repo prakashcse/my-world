@@ -1,0 +1,18 @@
+<!-- {{ data }} -->
+
+<table class="table table-striped">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Phone</th>
+  </tr>
+  <tr ng-repeat="d in data">
+    <td>{{d.id}}</td>
+    <td>{{d.name}}</td>
+    <td>{{d.username}}</td>
+    <td>{{d.email}}</td>
+    <td>{{d.phone}}</td>
+  </tr>
+</table>

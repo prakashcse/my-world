@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row mt-5">
+    <div><button class="btn btn-primary" ng-click="add()">Add</button></div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th ng-click="orderByMe('name')">Name</th>
+          <th ng-click="orderByMe('age')">Age</th>
+          <th ng-click="orderByMe('Born')">Born At</th>
+          <th ng-click="orderByMe('Birthdate')">DOB</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="n in data track by $index ">
+          <td>{{n.name }}</td>
+          <td>{{n.age}}</td>
+          <td>{{n.Born }}</td>
+          <td>{{n.Birthdate}}</td>
+          <td>
+            <button class="btn btn-danger" ng-click="delete($index)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

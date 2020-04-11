@@ -1,0 +1,24 @@
+<div class="row">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="n in myData track by $index ">
+        <td>{{n.Name }}</td>
+        <td>{{n.City}}</td>
+        <td>{{n.Country}}</td>
+        <td>
+          <button class="btn btn-danger" ng-click="deleteMyData($index)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
